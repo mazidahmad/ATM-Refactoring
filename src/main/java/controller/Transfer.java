@@ -8,6 +8,7 @@ package controller;
 import model.Account;
 import model.BankDatabase;
 import model.CashDispenser;
+import model.DepositSlot;
 import model.Keypad;
 import model.Transaction;
 

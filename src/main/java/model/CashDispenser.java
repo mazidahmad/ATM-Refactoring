@@ -16,15 +16,13 @@ public class CashDispenser {
    }
 
    // simulates dispensing of specified amount of cash
-   public void dispenseCash(int amount, int CurrencyUnit) {
-      amount = amount/getConversion(CurrencyUnit); 
+   public void dispenseCash(int amount) {
       int billsRequired = amount / 20; // number of $20 bills required
       count -= billsRequired; // update the count of bills
    }
 
    // indicates whether cash dispenser can dispense desired amount
-   public boolean isSufficientCashAvailable(int amount, int CurrencyUnit) {
-      amount = amount/getConversion(CurrencyUnit); 
+   public boolean isSufficientCashAvailable(int amount) {
       int billsRequired = amount / 20; // number of $20 bills required
 
       if (count >= billsRequired) {
@@ -35,8 +33,4 @@ public class CashDispenser {
       }
    }
    
-   public int getConversion(int CurrencyUnit){
-        if(CurrencyUnit == 2) return 14426;
-        else return 1;
-    }
 } 

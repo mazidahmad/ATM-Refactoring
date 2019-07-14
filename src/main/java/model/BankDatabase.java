@@ -74,7 +74,7 @@ public class BankDatabase {
         return userAccount != null;
     }
    
-   boolean cekstatus(int userAccountNumber){
+   public boolean cekstatus(int userAccountNumber){
        boolean cek = false;
        
        cek = getStatusAccount(userAccountNumber);
